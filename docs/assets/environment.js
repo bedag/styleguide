@@ -1,14 +1,6 @@
-// Konfiguration der Anwendung fuer die aktuelle Teststufe
-// wird durch den Betrieb gepflegt
-
+// this file contains configuration for local development
+// it should be replaced when deploying to a real server
 window.environment = {
-  // ob der development mode von angular aktiviert werden soll
-  // typischerweise true in der entwicklung, und false in allen anderen Teststufen
-  debug: false,
-
-  // verfügbare Sprachen
-  availableLanguages: ['de', 'en'],
-
-  // Standardsprache
-  defaultLanguage: 'de'
+  production: false,
+  defaultLanguage: 'de',
 };

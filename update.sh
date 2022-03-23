@@ -1,10 +1,10 @@
 #!/bin/sh
 cd ../bedag-angular-styleguide/
-mvn clean install
+./mvnw clean install
 
 cd -
 rm -rf docs
-mv ../bedag-angular-styleguide/frontend/dist/app docs
+mv ../bedag-angular-styleguide/frontend/dist/frontend docs
 
 sed -i "s#<base href=\"/\">#<base href=\"/styleguide/\">#" docs/index.html
 
