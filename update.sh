@@ -1,5 +1,5 @@
 #!/bin/sh
-cd ../bedag-angular-styleguide/
+cd ../bedag-angular-styleguide
 ./mvnw clean install
 
 cd -
