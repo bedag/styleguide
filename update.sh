@@ -4,10 +4,10 @@ cd ../bedag-angular-styleguide
 
 cd -
 rm -rf docs
-mv ../bedag-angular-styleguide/frontend/dist/frontend docs
+cp -r ../bedag-angular-styleguide/frontend/dist/frontend docs
+rm -rf docs/src
 
 sed -i "s#<base href=\"/\">#<base href=\"/styleguide/\">#" docs/index.html
 
 # Hack to make paths within the app work
 cp docs/index.html docs/404.html
-
